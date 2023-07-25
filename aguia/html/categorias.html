@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/botones.css">
+    <title>botones </title>
+</head>
+<body>
+    
+    <div class="container">
+     <center> 
+         <h2>categoria  </h2>
+         <form action="../php/categoria.php" method="POST">
+            <label for="categoria">Categoría:</label>
+            <select name="categoria" id="categoria" required>
+              <option value="">Seleccionar...</option>
+              <option value="desallunos">desallunos</option>
+              <option value="restaurantes">restaurantes</option>
+              <option value="precio 100">churros</option>
+              <option value="puestos ambulantes">puestos ambulantes </option>
+              <!-- Agrega más opciones de categorías según tus necesidades -->
+            </select>
+            <br><br>
+            <input type="submit" value="Seleccionar">
+          </form>
+    </center> 
+
+    </div>
+</body>
+</html>

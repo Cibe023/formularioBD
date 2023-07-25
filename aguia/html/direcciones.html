@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/botones.css">
+    <title>botones </title>
+</head>
+<body>
+    
+    <div class="container">
+     <center> 
+        <h2>Contacto de tu Negocio</h2>
+        <form action="../php/direcciones.php" method="POST">
+          <label for="direccion">Dirección:</label>
+          <input type="text" name="direccion" id="direccion" required>
+          <br><br>
+          <label for="calle">Calle:</label>
+          <input type="text" name="calle" id="calle" required>
+          <br><br>
+          <label for="ciudad">Ciudad:</label>
+          <input type="text" name="ciudad" id="ciudad" required>
+          <br><br>
+          <label for="estado">Estado:</label>
+          <input type="text" name="estado" id="estado" required>
+          <br><br>
+          <label for="telefono">Teléfono:</label>
+          <input type="tel" name="telefono" id="telefono" required>
+          <br><br>
+          <label for="pais">País:</label>
+          <input type="text" name="pais" id="pais" required>
+          <br><br>
+          <!--<label for="correo">Confirmar Correo:</label>
+          <input type="email" id="correo" name="correo" 
+          placeholder="Correo electrónico" required>
+          <br><br>-->
+          <input type="submit" value="Enviar">
+        </form>
+    </center> 
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/botones.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        una empresa quiere agendar citas a sus clientes
+        requiere por llamada pedir informaion:
+       ( obligatorio)
+
+        -nombre ( obligatorio)
+        -apellido
+        -telefono ( obligatorio)
+        -colonia ( obligatorio)
+        -direccion ( obligatorio)
+        -Tipo_servicio (Servicio 1, servicio 2, servicio3, servico N)
+    ## se puede manejar como list, columm, checbox imput ###
+        -correo
+        -fecha de citas 
+        -fecha de hoy ( obligatorio)
+        -quien lo atendio ( obligatorio)
+
+    /////////////////// nivel de usuario/////////
+
+        mi.input.selecdID()
+        [0,1,2,3,4,5]
+
+        $_POST['idList']
+   
+    -->
+    <div class="container">
+    <center> 
+        <h2>Mas direccion</h2>
+        <form action="../php/formularioPrueba" method="POST">
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre" required placeholder="nombre">
+            <br><br>
+            <label for="Apellido">Apellido:</label>
+            <input type="text" name="Apellido" id="Apellido"  placeholder="Apellido">
+            <br><br>
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" name="telefono" id="telefono" required placeholder="telefono">
+            <br><br>
+            <label for="colonia">colonia:</label>
+            <input type="text" name="colonia" id="colonia" required placeholder="colonia">
+            <br><br>
+            <label for="direccion">Dirección:</label>
+            <input type="text" name="direccion" id="direccion" required placeholder="direccion">
+            <br><br>
+            <label for="servicio">servicio:</label>
+            <select name="servicio" id="servicio" required>
+              <option value="">Seleccionar...</option>
+              <option value="servicio 1">servicio 1</option>
+              <option value="servicio 2">servicio 2</option>
+              <option value="servicio 3">servicio 3</option>
+              <option value="servicio N">servicio N </option>
+            </select>
+              <br><br>
+            <label for="correo">correo:</label>
+            <input type="email" name="correo" id="correo" required placeholder="correo">
+            <br><br>
+
+            <label for="fecha">Fecha de la cita:</label>
+            <input type="date" id="fecha" name="fecha" required><br>
+            <br><br>
+            <label for="hora">Hora de la cita:</label>
+            <input type="time" id="hora" name="hora" required><br>
+            <br><br>
+            <label for="motivo">Motivo de la cita:</label>
+            <textarea id="motivo" name="motivo" rows="4" cols="50" required></textarea><br>
+        
+
+        
+          <input type="submit" value="Enviar">
+        </form>
+    </center> 
+</div>
+
+
+</body>
+</html>
