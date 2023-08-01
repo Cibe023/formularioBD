@@ -1,12 +1,15 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #e12923;
+    background-image: url(/img/fondo\ principal.gif);
+    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   }
 
   .container {
     max-width: 400px;
     margin: 50px auto;
-    background-color: #fff;
+    background-color: #0bcacd58;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
@@ -14,4 +17,6 @@ body {
 
   .container h2 {
     text-align: center;
+    color: aliceblue;
+    -webkit-text-stroke: 1px black; /* Contorno del texto (ancho y color) */
   }

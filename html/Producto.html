@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/botones.css">
+    <title>botones </title>
+</head>
+<body>
+    
+    <div class="container">
+    <center> 
+    <h2>Publicar Producto</h2>
+    <form action="../php/producto.php" method="POST" enctype="multipart/form-data">
+    <label for="nombre" style="font-size: 40px; color:rgb(255, 255, 255)">Nombre del producto:</label>
+    <input type="text" name="nombre" id="nombre" required>
+    <br><br>
+    <label for="descripcion" style="font-size: 40px; color:rgb(255, 255, 255)">Descripción del producto:</label>
+    <textarea name="descripcion" id="descripcion" required></textarea>
+    <br><br>
+    <label for="imagen" style="font-size: 40px; color:rgb(255, 255, 255)">Imagen del producto:</label>
+    <br><br>
+    <input type="file" name="imagen" id="imagen" required>
+    <br><br>
+    <input type="submit" value="Publicar Producto">
+    </form>
+    </center> 
+
+    </div>
+</body>
+</html>

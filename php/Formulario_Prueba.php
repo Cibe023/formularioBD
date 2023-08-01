@@ -1,9 +1,9 @@
 <?php
 
-include_once '/basicophp/config.php';
-include 'Encriptado2.php';
-include '/basicophp/limpieza.php';
-include '/basicophp/logger.php';
+include_once '/FuncionesPHP/config.php';
+include '/FuncionesPHP/Encriptado2.php';
+include '/FuncionesPHP/limpieza.php';
+include '/FuncionesPHP/logger.php';
 #name service api 
 if( php_sapi_name() !=='apache2handler'){
 die("no pudes abrirlo desde la consola ");

@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../css/formulario.css">
-   
+    <link rel="stylesheet" href="../css/botones.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
@@ -33,14 +32,13 @@
         $_POST['idList']
    
     -->
-    
-        <div class="container">
+    <div class="container">
     <center> 
         <h2>Mas direccion</h2>
-        <form action="../php/formularioPrueba" method="POST">
+        <form action="../php/direcciones.php" method="POST">
 
-            <label for="nombre">Nombre:</label>
-            <input type="text" name="nombre" id="nombre" required placeholder="nombre">
+            <label for="Nombre">Nombre:</label>
+            <input type="text" name="Nombre" id="Nombre" required placeholder="Nombre">
             <br><br>
             <label for="Apellido">Apellido:</label>
             <input type="text" name="Apellido" id="Apellido"  placeholder="Apellido">
@@ -54,37 +52,41 @@
             <label for="direccion">Dirección:</label>
             <input type="text" name="direccion" id="direccion" required placeholder="direccion">
             <br><br>
-            <label for="servicio">servicio:</label>
-            <select name="servicio" id="servicio" required>
+            <label for="categoria">Categoría:</label>
+            <select name="categoria" id="categoria" required>
               <option value="">Seleccionar...</option>
-              <option value="servicio 1">servicio 1</option>
-              <option value="servicio 2">servicio 2</option>
-              <option value="servicio 3">servicio 3</option>
-              <option value="servicio N">servicio N </option>
+              <option value="desallunos">desallunos</option>
+              <option value="restaurantes">restaurantes</option>
+              <option value="precio 100">churros</option>
+              <option value="puestos ambulantes">puestos ambulantes </option>
             </select>
               <br><br>
             <label for="correo">correo:</label>
             <input type="email" name="correo" id="correo" required placeholder="correo">
             <br><br>
-
-            <label for="fecha">Fecha de la cita:</label>
-            <input type="date" id="fecha" name="fecha" required><br>
-            <br><br>
-            <label for="hora">Hora de la cita:</label>
-            <input type="time" id="hora" name="hora" required><br>
-            <br><br>
-            <label for="motivo">Motivo de la cita:</label>
-            <textarea id="motivo" name="motivo" rows="4" cols="50" required></textarea><br>
-        
-
-        
+          
+          
+          <label for="calle">Calle:</label>
+          <input type="text" name="calle" id="calle" required>
+          <br><br>
+          <label for="ciudad">Ciudad:</label>
+          <input type="text" name="ciudad" id="ciudad" required>
+          <br><br>
+          <label for="estado">Estado:</label>
+          <input type="text" name="estado" id="estado" required>
+          <br><br>
+          
+          <input type="email" id="correo" name="correo" placeholder="Correo electrónico" required>
+          <label for="pais">País:</label>
+          <input type="text" name="pais" id="pais" required>
+          <br><br>
+          <!--<label for="correo">Confirmar Correo:</label>
+          <input type="email" id="correo" name="correo" 
+          placeholder="Correo electrónico" required>
+          <br><br>-->
           <input type="submit" value="Enviar">
         </form>
     </center> 
-    
-        </div>
-
-        
-
+</div>
 </body>
 </html>

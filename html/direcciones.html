@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/botones.css">
+    <title>botones </title>
+</head>
+<body>
+    
+    <div class="container">
+     <center> 
+        <h2>Contacto de tu Negocio</h2>
+        <form action="../php/direcciones.php" method="POST">
+          <label for="direccion" style="font-size: 30px; color:rgb(252, 252, 252)">Dirección:</label>
+          <input type="text" name="direccion" id="direccion" required>
+          <br><br>
+          <label for="calle" style="font-size: 30px; color:rgb(252, 252, 252)">Calle:</label>
+          <input type="text" name="calle" id="calle" required>
+          <br><br>
+          <label for="ciudad" style="font-size: 30px; color:rgb(252, 252, 252)">Ciudad:</label>
+          <input type="text" name="ciudad" id="ciudad" required>
+          <br><br>
+          <label for="estado" style="font-size: 30px; color:rgb(252, 252, 252)">Estado:</label>
+          <input type="text" name="estado" id="estado" required>
+          <br><br>
+          <label for="telefono" style="font-size: 30px; color:rgb(252, 252, 252)">Teléfono:</label>
+          <input type="tel" name="telefono" id="telefono" required>
+          <br><br>
+          <label for="pais" style="font-size: 30px; color:rgb(252, 252, 252)">País:</label>
+          <input type="text" name="pais" id="pais" required>
+          <br><br>
+          <!--<label for="correo">Confirmar Correo:</label>
+          <input type="email" id="correo" name="correo" 
+          placeholder="Correo electrónico" required>
+          <br><br>-->
+          <input type="submit" value="Enviar">
+        </form>
+    </center> 
+
+    </div>
+</body>
+</html>
